@@ -1,0 +1,227 @@
+* {box-sizing: border-box;}
+
+body { 
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid;
+}
+
+.header {
+  display: flex;
+  border-bottom: 1px solid;
+}
+
+.header .company-name {
+  line-height: 0;
+}
+
+.header .company-motto {
+  margin-top: 40px;
+}
+
+.header .comapany-since{
+  margin-top: 62px;
+  text-align: right;
+}
+
+.header-left {
+  width: 70%;
+  margin-left: 20px;
+}
+
+.header-right {
+  width: 30%;
+  margin-right: 20px;
+}
+
+.company-since{
+  margin-top: 62px;
+  font-size: 18px;
+  text-align: right;
+}
+
+.search-container{
+  text-align: right;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.search-component {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.search-btn {
+  background: white;
+  border: 1px solid;
+  font-size: 22px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.search-input{
+  height: 30px;
+  width: 250px;
+  margin-right: 25px;
+}
+
+.table-component{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.table-component > table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.table-component td {
+  cursor: pointer;
+}
+
+.table-component > table{
+  width: 100%;
+  text-align: center;
+}
+
+.table-component th{
+  height: 45px;
+}
+
+.name-container > img, span{
+  vertical-align: middle;
+  margin: 5px;
+}
+
+.name-container{
+  text-align: left;
+  padding-left: 25px;
+}
+
+.table-component .avatar{
+  width: 25px;
+}
+
+.table-component > .center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.table-component > .id{
+  width: 10%;
+}
+
+.table-component > .name{
+  width: 20%;
+}
+
+.table-component > .contact{
+  width: 30%;
+}
+
+.table-component > .address{
+  width: 40%;
+}
+
+.pagination-container{
+  text-align: right;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.pagination-container button{
+  font-size: 22px;
+  background: white;
+  border: 1px solid;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.pagination-container .page-no{
+  border: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.pagination-container .active-page{
+  background: #ebebeb;
+    border: 1px solid #ccc;
+}
+
+.employee-detail-modal {
+  display: block; 
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #888;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.avatar-detail{
+  border: 1px solid;
+  width: 150px;
+  padding: 10px;
+}
+
+.employee-detail{
+  display: flex;
+}
+
+.employee-detail-right{
+  margin-top: 15.5%;
+  margin-left: 30px;
+}
+
+.employee-name{
+  border-bottom: 2px solid #8f8f8f;
+  padding-bottom: 10px;
+}
+
+.active-row{
+  background: gray;
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+ .search-input{
+    width: 212px;
+    margin-right: 15px;
+ }
+ .company-name{
+  font-size: 25px;
+ }
+}
+
